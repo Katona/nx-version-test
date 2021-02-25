@@ -20,5 +20,6 @@ module.exports = {
     '<rootDir>/apps/demo2',
     '<rootDir>/apps/demo3',
     '<rootDir>/apps/demo4',
+    '<rootDir>/apps/demo5',
   ],
 };

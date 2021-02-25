@@ -53,6 +53,13 @@
     "demo4-e2e": {
       "tags": [],
       "implicitDependencies": ["demo4"]
+    },
+    "demo5": {
+      "tags": []
+    },
+    "demo5-e2e": {
+      "tags": [],
+      "implicitDependencies": ["demo5"]
     }
   }
 }
