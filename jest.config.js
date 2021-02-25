@@ -10,5 +10,7 @@ module.exports = {
     '<rootDir>/libs/lib7',
     '<rootDir>/libs/lib8',
     '<rootDir>/libs/lib9',
+    '<rootDir>/libs/lib10',
+    '<rootDir>/libs/lib11',
   ],
 };

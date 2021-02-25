@@ -371,6 +371,86 @@
           }
         }
       }
+    },
+    "lib10": {
+      "root": "libs/lib10",
+      "sourceRoot": "libs/lib10/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib10/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib10"
+          ],
+          "options": {
+            "jestConfig": "libs/lib10/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib10",
+            "tsConfig": "libs/lib10/tsconfig.lib.json",
+            "packageJson": "libs/lib10/package.json",
+            "main": "libs/lib10/src/index.ts",
+            "assets": [
+              "libs/lib10/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "lib11": {
+      "root": "libs/lib11",
+      "sourceRoot": "libs/lib11/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib11/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib11"
+          ],
+          "options": {
+            "jestConfig": "libs/lib11/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib11",
+            "tsConfig": "libs/lib11/tsconfig.lib.json",
+            "packageJson": "libs/lib11/package.json",
+            "main": "libs/lib11/src/index.ts",
+            "assets": [
+              "libs/lib11/*.md"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
