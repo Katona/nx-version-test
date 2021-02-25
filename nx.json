@@ -1,14 +1,9 @@
 {
   "npmScope": "version-test",
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "implicitDependencies": {
     "workspace.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
@@ -17,34 +12,15 @@
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
-      }
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
     }
   },
   "projects": {
-    "lib1": {
-      "tags": []
-    },
-    "lib2": {
-      "tags": []
-    },
-    "demo": {
-      "tags": []
-    },
-    "demo-e2e": {
-      "tags": [],
-      "implicitDependencies": [
-        "demo"
-      ]
-    },
-    "workspace": {
-      "tags": []
-    }
+    "lib1": { "tags": [] },
+    "lib2": { "tags": [] },
+    "workspace": { "tags": [] },
+    "lib3": { "tags": [] },
+    "lib4": { "tags": [] },
+    "lib5": { "tags": [] }
   }
 }

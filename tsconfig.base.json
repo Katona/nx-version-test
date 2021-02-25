@@ -16,7 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "lib1": ["libs/lib1/src/index.ts"],
-      "lib2": ["libs/lib2/src/index.ts"]
+      "lib2": ["libs/lib2/src/index.ts"],
+      "lib3": ["libs/lib3/src/index.ts"],
+      "lib4": ["libs/lib4/src/index.ts"],
+      "lib5": ["libs/lib5/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
