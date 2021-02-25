@@ -211,6 +211,166 @@
           }
         }
       }
+    },
+    "lib6": {
+      "root": "libs/lib6",
+      "sourceRoot": "libs/lib6/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib6/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib6"
+          ],
+          "options": {
+            "jestConfig": "libs/lib6/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib6",
+            "tsConfig": "libs/lib6/tsconfig.lib.json",
+            "packageJson": "libs/lib6/package.json",
+            "main": "libs/lib6/src/index.ts",
+            "assets": [
+              "libs/lib6/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "lib7": {
+      "root": "libs/lib7",
+      "sourceRoot": "libs/lib7/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib7/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib7"
+          ],
+          "options": {
+            "jestConfig": "libs/lib7/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib7",
+            "tsConfig": "libs/lib7/tsconfig.lib.json",
+            "packageJson": "libs/lib7/package.json",
+            "main": "libs/lib7/src/index.ts",
+            "assets": [
+              "libs/lib7/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "lib8": {
+      "root": "libs/lib8",
+      "sourceRoot": "libs/lib8/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib8/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib8"
+          ],
+          "options": {
+            "jestConfig": "libs/lib8/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib8",
+            "tsConfig": "libs/lib8/tsconfig.lib.json",
+            "packageJson": "libs/lib8/package.json",
+            "main": "libs/lib8/src/index.ts",
+            "assets": [
+              "libs/lib8/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "lib9": {
+      "root": "libs/lib9",
+      "sourceRoot": "libs/lib9/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib9/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib9"
+          ],
+          "options": {
+            "jestConfig": "libs/lib9/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib9",
+            "tsConfig": "libs/lib9/tsconfig.lib.json",
+            "packageJson": "libs/lib9/package.json",
+            "main": "libs/lib9/src/index.ts",
+            "assets": [
+              "libs/lib9/*.md"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

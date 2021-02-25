@@ -19,7 +19,11 @@
       "lib2": ["libs/lib2/src/index.ts"],
       "lib3": ["libs/lib3/src/index.ts"],
       "lib4": ["libs/lib4/src/index.ts"],
-      "lib5": ["libs/lib5/src/index.ts"]
+      "lib5": ["libs/lib5/src/index.ts"],
+      "lib6": ["libs/lib6/src/index.ts"],
+      "lib7": ["libs/lib7/src/index.ts"],
+      "lib8": ["libs/lib8/src/index.ts"],
+      "lib9": ["libs/lib9/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
