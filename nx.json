@@ -1,9 +1,14 @@
 {
   "npmScope": "version-test",
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "implicitDependencies": {
     "workspace.json": "*",
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
@@ -12,26 +17,42 @@
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
     }
   },
   "projects": {
-    "lib1": { "tags": [] },
-    "lib2": { "tags": [] },
-    "workspace": { "tags": [] },
-    "lib3": { "tags": [] },
-    "lib4": { "tags": [] },
-    "lib5": { "tags": [] },
-    "lib6": { "tags": [] },
-    "lib7": { "tags": [] },
-    "lib8": { "tags": [] },
-    "lib9": { "tags": [] },
-    "lib10": { "tags": [] },
-    "lib11": { "tags": [] },
-    "lib12": { "tags": [] },
-    "lib13": { "tags": [] },
-    "lib14": { "tags": [] },
-    "lib15": { "tags": [] },
-    "lib16": { "tags": [] }
+    "workspace": {
+      "tags": []
+    },
+    "demo": {
+      "tags": []
+    },
+    "demo-e2e": {
+      "tags": [],
+      "implicitDependencies": ["demo"]
+    },
+    "demo2": {
+      "tags": []
+    },
+    "demo2-e2e": {
+      "tags": [],
+      "implicitDependencies": ["demo2"]
+    },
+    "demo3": {
+      "tags": []
+    },
+    "demo3-e2e": {
+      "tags": [],
+      "implicitDependencies": ["demo3"]
+    },
+    "demo4": {
+      "tags": []
+    },
+    "demo4-e2e": {
+      "tags": [],
+      "implicitDependencies": ["demo4"]
+    }
   }
 }
