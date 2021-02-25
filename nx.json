@@ -18,9 +18,33 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "lib1": {
+      "tags": []
+    },
+    "lib2": {
+      "tags": []
+    },
+    "demo": {
+      "tags": []
+    },
+    "demo-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "demo"
+      ]
+    },
+    "workspace": {
+      "tags": []
+    }
+  }
 }
