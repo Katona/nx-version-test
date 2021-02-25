@@ -571,6 +571,86 @@
           }
         }
       }
+    },
+    "lib15": {
+      "root": "libs/lib15",
+      "sourceRoot": "libs/lib15/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib15/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib15"
+          ],
+          "options": {
+            "jestConfig": "libs/lib15/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib15",
+            "tsConfig": "libs/lib15/tsconfig.lib.json",
+            "packageJson": "libs/lib15/package.json",
+            "main": "libs/lib15/src/index.ts",
+            "assets": [
+              "libs/lib15/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "lib16": {
+      "root": "libs/lib16",
+      "sourceRoot": "libs/lib16/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib16/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib16"
+          ],
+          "options": {
+            "jestConfig": "libs/lib16/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib16",
+            "tsConfig": "libs/lib16/tsconfig.lib.json",
+            "packageJson": "libs/lib16/package.json",
+            "main": "libs/lib16/src/index.ts",
+            "assets": [
+              "libs/lib16/*.md"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
