@@ -451,6 +451,126 @@
           }
         }
       }
+    },
+    "lib12": {
+      "root": "libs/lib12",
+      "sourceRoot": "libs/lib12/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib12/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib12"
+          ],
+          "options": {
+            "jestConfig": "libs/lib12/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib12",
+            "tsConfig": "libs/lib12/tsconfig.lib.json",
+            "packageJson": "libs/lib12/package.json",
+            "main": "libs/lib12/src/index.ts",
+            "assets": [
+              "libs/lib12/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "lib13": {
+      "root": "libs/lib13",
+      "sourceRoot": "libs/lib13/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib13/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib13"
+          ],
+          "options": {
+            "jestConfig": "libs/lib13/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib13",
+            "tsConfig": "libs/lib13/tsconfig.lib.json",
+            "packageJson": "libs/lib13/package.json",
+            "main": "libs/lib13/src/index.ts",
+            "assets": [
+              "libs/lib13/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "lib14": {
+      "root": "libs/lib14",
+      "sourceRoot": "libs/lib14/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib14/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/lib14"
+          ],
+          "options": {
+            "jestConfig": "libs/lib14/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/libs/lib14",
+            "tsConfig": "libs/lib14/tsconfig.lib.json",
+            "packageJson": "libs/lib14/package.json",
+            "main": "libs/lib14/src/index.ts",
+            "assets": [
+              "libs/lib14/*.md"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

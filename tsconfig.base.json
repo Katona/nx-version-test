@@ -25,7 +25,10 @@
       "lib8": ["libs/lib8/src/index.ts"],
       "lib9": ["libs/lib9/src/index.ts"],
       "lib10": ["libs/lib10/src/index.ts"],
-      "lib11": ["libs/lib11/src/index.ts"]
+      "lib11": ["libs/lib11/src/index.ts"],
+      "lib12": ["libs/lib12/src/index.ts"],
+      "lib13": ["libs/lib13/src/index.ts"],
+      "lib14": ["libs/lib14/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
